@@ -1,0 +1,308 @@
+body {
+    background: radial-gradient(ellipse at bottom, #1C2837 0%, #050608 100%);
+    background-attachment: fixed;
+}
+
+/*   Comman */
+div:not(.planets-names){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 100%;
+    border: 0.5px solid gray;
+}
+
+/*   Comman   */
+.solar-sys div:before{
+    content: " ";
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    margin-top: -4px;
+    margin-left: -4px;
+}
+/* Sun Center */
+.solar-sys .sun{
+    width: 60px;
+    height: 60px;
+    border: transparent !important;
+    background: radial-gradient(ellipse at center, #fad328 0%, #e09017 50%, #fad328 100%);
+    box-shadow:0px 0px 15px 5px yellow;  
+    z-index: 999;
+}
+
+/*  1- Mercury  */
+.solar-sys .mercury{
+    width: 200px;
+    height: 200px;
+    animation: rotate 10.5s linear 0s infinite;
+    -webkit-animation: rotate 10.5s linear infinite;
+    -moz-animation: rotate 10.5s linear infinite;
+    -ms-animation: rotate 10.5s linear infinite;
+    -o-animation: rotate 10.5s linear infinite;
+    margin-top: -100px;
+    margin-left: -100px;
+    z-index: 999;
+}
+.solar-sys .mercury:before{
+    background: honeydew;
+}
+
+/*  2- Venus  */
+.solar-sys .venus{
+    width: 250px;
+    height: 250px;
+    animation: rotate 17.5s linear 0s infinite;
+    -webkit-animation: rotate 17.5s linear infinite;
+    -moz-animation: rotate 17.5s linear infinite;
+    -ms-animation: rotate 17.5s linear infinite;
+    -o-animation: rotate 17.5s linear infinite;
+    margin-top: -125px;
+    margin-left: -125px;
+}
+.solar-sys .venus:before{
+    background: rgb(194, 192, 59);
+}
+
+/*   3- Earth   */
+.solar-sys .earth{
+    width: 300px;
+    height: 300px;
+    animation: rotate 22.5s linear 0s infinite;
+    -webkit-animation: rotate 22.5s linear infinite;
+    -moz-animation: rotate 22.5s linear infinite;
+    -ms-animation: rotate 22.5s linear infinite;
+    -o-animation: rotate 22.5s linear infinite;
+    margin-top: -150px;
+    margin-left: -150px;
+}
+.solar-sys .earth:before{
+    background: #11abe9;
+}
+.solar-sys .earth:after{    
+    content: "";
+    height: 18px;
+    width: 18px;
+    border-radius: 100px;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    margin-left: -9px;
+    margin-top: -9px;
+    box-shadow: 0 -10px 0 -8px grey;
+    animation: rotate 2.5s ease-in-out infinite;
+    -webkit-animation: rotate 2.5s ease-in-out infinite;
+    -moz-animation: rotate 2.5s ease-in-out infinite;
+    -ms-animation: rotate 2.5s ease-in-out infinite;
+    -o-animation: rotate 2.5s ease-in-out infinite;
+}
+
+/*  4- MARS  */
+.solar-sys .mars{
+    width: 350px;
+    height: 350px;
+    animation: rotate 35.5s linear 0s infinite;
+    -webkit-animation: rotate 35.5s linear infinite;
+    -moz-animation: rotate 35.5s linear infinite;
+    -ms-animation: rotate 35.5s linear infinite;
+    -o-animation: rotate 35.5s linear infinite;
+    margin-top: -175px;
+    margin-left: -175px;
+    z-index: 999;
+}
+.solar-sys .mars:before{
+    background: red;
+}
+
+/*  Spectrum  */
+.solar-sys .spectrum{
+    width: 350px;
+    height: 350px;
+    animation: rotate 35.5s linear 0s infinite;
+    -webkit-animation: rotate 35.5s linear infinite;
+    -moz-animation: rotate 35.5s linear infinite;
+    -ms-animation: rotate 35.5s linear infinite;
+    -o-animation: rotate 35.5s linear infinite;
+    margin-top: -175px;
+    margin-left: -175px;
+}
+.solar-sys .spectrum:before{
+    content: "";
+    height: 18px;
+    width: 18px;
+    box-shadow: -10px -10px 0 -8px rgba(255,255,255,0.2),5px -12px 0 -8px rgba(255,255,255,0.7),
+    -30px -20px 0 -8px rgba(255,255,255,0.5),25px -20px 0 -8px rgba(255,255,255,0.7),
+    -45px -10px 0 -8px rgba(255,255,255,0.5),30px -10px 0 -8px rgba(255,255,255,0.2),
+    -60px -15px 0 -8px rgba(255,255,255,0.5),40px -20px 0 -8px rgba(255,255,255,0.5),
+    -65px -5px 0 -8px rgba(255,255,255,0.5),45px -5px 0 -8px rgba(255,255,255,0.7),
+    -75px -10px 0 -8px rgba(255,255,255,0.5),65px -10px 0 -8px rgba(255,255,255,0.7),
+    -80px 0px 0 -8px rgba(255,255,255,0.5),70px 5px 0 -8px rgba(255,255,255,0.7),
+    -100px 10px 0 -8px rgba(255,255,255,0.7), 100px 10px 0 -8px rgba(255,255,255,0.2),
+    -95px 15px 0 -8px rgba(255,255,255,0.7), 95px 15px 0 -8px rgba(255,255,255,0.5),
+    -120px 25px 0 -8px rgba(255,255,255,0.2), 120px 25px 0 -8px rgba(255,255,255,0.7),
+    -130px 35px 0 -8px rgba(255,255,255,0.7), 130px 50px 0 -8px rgba(255,255,255,0.2),
+    -145px 45px 0 -8px rgba(255,255,255,0.5), 145px 58px 0 -8px rgba(255,255,255,0.7),
+    -160px 65px 0 -8px rgba(255,255,255,0.7), 160px 73px 0 -8px rgba(255,255,255,0.2),
+    -165px 79px 0 -8px rgba(255,255,255,0.5), 165px 89px 0 -8px rgba(255,255,255,0.7),
+    -175px 80px 0 -8px rgba(255,255,255,0.7), 170px 85px 0 -8px rgba(255,255,255,0.2),
+    -175px 100px 0 -8px rgba(255,255,255,0.5), 175px 105px 0 -8px rgba(255,255,255,0.2),
+    -175px 110px 0 -8px rgba(255,255,255,0.7), 175px 115px 0 -8px rgba(255,255,255,0.4),
+    -185px 120px 0 -8px rgba(255,255,255,0.5), 180px 125px 0 -8px rgba(255,255,255,0.2),
+    -185px 135px 0 -8px rgba(255,255,255,0.7), 185px 145px 0 -8px rgba(255,255,255,0.7),
+    -195px 150px 0 -8px rgba(255,255,255,0.7), 180px 195px 0 -8px rgba(255,255,255,0.7),
+    -190px 160px 0 -8px rgba(255,255,255,0.7), 180px 155px 0 -8px rgba(255,255,255,0.7),
+    -185px 170px 0 -8px rgba(255,255,255,0.7), 180px 180px 0 -8px rgba(255,255,255,0.2),
+    -195px 175px 0 -8px rgba(255,255,255,0.7), 180px 170px 0 -8px rgba(255,255,255,0.2),
+    -199px 189px 0 -8px rgba(255,255,255,0.7), 185px 210px 0 -8px rgba(255,255,255,0.2),
+    -190px 189px 0 -8px rgba(255,255,255,0.7), 190px 179px 0 -8px rgba(255,255,255,0.2),
+    -190px 205px 0 -8px rgba(255,255,255,0.7), 175px 215px 0 -8px rgba(255,255,255,0.2), 
+    -180px 220px 0 -8px rgba(255,255,255,0.3), 180px 230px 0 -8px rgba(255,255,255,0.7),    
+    -180px 220px 0 -8px rgba(255,255,255,0.3), 180px 230px 0 -8px rgba(255,255,255,0.7),    
+    -175px 250px 0 -8px rgba(255,255,255,0.7), 165px 250px 0 -8px rgba(255,255,255,0.2),    
+    -160px 270px 0 -8px rgba(255,255,255,0.2), 155px 270px 0 -8px rgba(255,255,255,0.7),    
+    -150px 280px 0 -8px rgba(255,255,255,0.7), 150px 280px 0 -8px rgba(255,255,255,0.2),
+    -140px 300px 0 -8px rgba(255,255,255,0.2), 140px 300px 0 -8px rgba(255,255,255,0.7),
+    -140px 310px 0 -8px rgba(255,255,255,0.2), 120px 310px 0 -8px rgba(255,255,255,0.2),
+    -130px 315px 0 -8px rgba(255,255,255,0.5), 115px 320px 0 -8px rgba(255,255,255,0.7),
+    -110px 320px 0 -8px rgba(255,255,255,0.2), 100px 325px 0 -8px rgba(255,255,255,0.7),
+    -150px 290px 0 -8px rgba(255,255,255,0.6), 90px 335px 0 -8px rgba(255,255,255,0.7),
+    -20px 350px 0 -8px rgba(255,255,255,0.2),20px 360px 0 -8px rgba(255,255,255,0.5),
+    -100px 340px 0 -8px rgba(255,255,255,0.7),30px 350px 0 -8px rgba(255,255,255,0.2),
+    -85px 340px 0 -8px rgba(255,255,255,0.3),50px 350px 0 -8px rgba(255,255,255,0.5),
+    -75px 340px 0 -8px rgba(255,255,255,0.7),70px 350px 0 -8px rgba(255,255,255,0.2),
+    -65px 350px 0 -8px rgba(255,255,255,0.7),50px 340px 0 -8px rgba(255,255,255,0.2),
+    -50px 355px 0 -8px rgba(255,255,255,0.7),70px 340px 0 -8px rgba(255,255,255,0.2),
+    -35px 355px 0 -8px rgba(255,255,255,0.7),50px 340px 0 -8px rgba(255,255,255,0.2),
+    -25px 360px 0 -8px rgba(255,255,255,0.7),10px 355px 0 -8px rgba(255,255,255,0.2),
+    -15px 365px 0 -8px rgba(255,255,255,0.7),10px 355px 0 -8px rgba(255,255,255,0.2);
+}
+
+/*  5- Jupiter  */
+.solar-sys .jupiter{
+    width: 400px;
+    height: 400px;
+    animation: rotate 37s linear 0s infinite;
+    -webkit-animation: rotate 37s linear infinite;
+    -moz-animation: rotate 37s linear infinite;
+    -ms-animation: rotate 37s linear infinite;
+    -o-animation: rotate 37s linear infinite;
+    margin-top: -200px;
+    margin-left: -200px;
+    z-index: 888;
+}
+.solar-sys .jupiter:before{
+    background: rgb(255, 223, 117);
+    z-index: 999;
+}
+
+/*  6- Saturn  */
+.solar-sys .saturn{
+    width: 450px;
+    height: 450px;
+    animation: rotate 42.8s linear 0s infinite;
+    -webkit-animation: rotate 42.8s linear infinite;
+    -moz-animation: rotate 42.8s linear infinite;
+    -ms-animation: rotate 42.8s linear infinite;
+    -o-animation: rotate 42.8s linear infinite;
+    margin-top: -225px;
+    margin-left: -225px;
+}
+.solar-sys .saturn:before{
+    background: red;
+    z-index: 999;
+}
+.solar-sys .saturn:after{
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-radius: 100px;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    margin-left: -5px;
+    margin-top: -5px;
+    border: 2px solid lightgray;
+    box-shadow: 1px 2px 3px 1px grey;
+    transform: skew(-50deg);
+}
+
+/*  7- Uranus  */
+.solar-sys .uranus{
+    width: 500px;
+    height: 500px;
+    animation: rotate 55s linear 0s infinite;
+    -webkit-animation: rotate 55s linear infinite;
+    -moz-animation: rotate 55s linear infinite;
+    -ms-animation: rotate 55s linear infinite;
+    -o-animation: rotate 55s linear infinite;
+    margin-top: -250px;
+    margin-left: -250px;
+}
+.solar-sys .uranus:before{
+    background: rgb(157, 125, 247);
+}
+
+/*  8- Neptune  */
+.solar-sys .neptune{
+    width: 550px;
+    height: 550px;
+    animation: rotate 75.5s linear 0s infinite;
+    -webkit-animation: rotate 75.5s linear infinite;
+    -moz-animation: rotate 75.5s linear infinite;
+    -ms-animation: rotate 75.5s linear infinite;
+    -o-animation: rotate 75.5s linear infinite;
+    margin-top: -275px;
+    margin-left: -275px;
+}
+.solar-sys .neptune:before{
+    background: rgb(210, 188, 252);
+}
+
+/*  9- Pluto  */
+.solar-sys .pluto{
+    width: 600px;
+    height: 600px;
+    animation: rotate 100.5s linear 0s infinite;
+    -webkit-animation: rotate 100.5s linear infinite;
+    -moz-animation: rotate 100.5s linear infinite;
+    -ms-animation: rotate 100.5s linear infinite;
+    -o-animation: rotate 100.5s linear infinite;
+    margin-top: -300px;
+    margin-left: -300px;
+}
+.solar-sys .pluto:before{
+    background: rgb(156, 155, 151);
+}
+
+@keyframes rotate{
+    from{   transform: rotate(0deg); 
+            -webkit-transform: rotate(0deg) ;
+            -moz-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+    }
+    to{     transform: rotate(360deg);
+            -webkit-transform: rotate(360deg) ;
+            -moz-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            -o-transform: rotate(360deg);    
+    }
+}
+
+.planets-names{
+    position: absolute;
+    right: 120px;
+    top: 120px;
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+.planets-names .planets{
+    list-style: none;
+}
+.planets-names .planets .planet{
+    padding: 10px 10px;
+    font-size: 20px;
+}
